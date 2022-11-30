@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./estilos/contacto.css">
+    <script src="../Javascript/contactojs.js"></script>
+</head>
+<body>
+<article>
+<section>
+    <header>
+    <h1>¡Contactanos!</h1>
+    <p>Dejanos tus datos y el producto que te intereso. Nosotros te responderemos a la brevedad</p>
+    </header>
+</section>
+<section class="container">
+        <fieldset>
+            <b><u><legend>DATOS PERSONALES</legend></u></b>
+            <label for="Nombre">Nombre
+                <input type="text" name="Nombre" id="Nombre">
+                <p id="NombreError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="Apellido">Apellido
+                <input type="text" name="Apellido" id="Apellido">
+                <p id="ApellidoError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="producto">Producto de interes
+                <input type="text" name="producto" id="producto">
+                <p id="productoError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="Mensaje"> Mensaje</label>
+            <textarea id="Mensaje" name="Mensaje" placeholder="Dejanos tu comentario" cols="100" rows="30"> </textarea>
+            <p id="MensajeError" class="ocultarError"> Debe ingresar datos</p>
+        </fieldset>
+    <button onclick="enviar()">Enviar</button>
+</section>
+</article>
+</body>
+</html>
